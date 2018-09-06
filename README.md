@@ -7,6 +7,9 @@ Lego pieces are known to increase in value over time. Being able to predict whic
 # Tech Information
  Data collected originally in Excel spreadsheet. Converted here to CSV file. Statistics run using Minitab software package
 
+# Contribute
+Best way to help is to collect more data. Write a script to scrape data from Bricklink website
+
 # Format:
 VarNumber: Variable name: Data type: Variable type: Description
 
