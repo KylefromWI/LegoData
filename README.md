@@ -8,34 +8,42 @@ Lego pieces are known to increase in value over time. Being able to predict whic
  Data collected originally in Excel spreadsheet. Converted here to CSV file. Statistics run using Minitab software package
 
 # Format:
-VarNumber: Variable name: Data type: Variable type: Description
 
-* # Identification Data
-  * Var1: Name: Alpha: Identifier
-  * Var2: Series: Int: Categorical: Blind-bag series number
+* # Identification Variables
+| Variable Name | Number | Variable Type | Data Type | Notes |
+|------------|------|-----------|-------|--------|
+| Name | Var1 | Label | Alpha | Official minifigure title |
+| Series | Var2 | Categorical | Integer | Blind-bag series number |
 
-* # Price Data
-  * Var3: Used Sales Data: USD: Numerical: Average cost per used completed figure in last six months
-  * Var4: Used Minifig Sales Data: USD: Numerical: Average cost per used minifigure without add ons in last six months
-  * Var5: New Sales Data: USD: Numerical: Average cost per new completed figure in last six months
-  * Var6: Leg Sales Data: USD: Numerical: Average cost per lot of used legs of minifigure
-  * Var7: Torso Sales Data: USD: Numerical: Average cost per lot of used torso of minifigure
-  * Var8: Head Sales Data: USD: Numerical: Average cost per lot of used head of minifigure
-  * Var9: Hair/hat Sales Data: USD: Numerical: Average cost per lot of used hair/hat of minifigure
+* # Price Variables
+| Name                         | Number | Variable Type | Data Type | Notes                                                            |
+|------------------------------|--------|---------------|-----------|------------------------------------------------------------------|
+| Used Sales Data              | Var3   | Numeric       | USD       | Average cost per used complete figure in last six months         |
+| Used Minifig-only Sales Data | Var4   | Numeric       | USD       | Average cost per used minifig without add-ons in last six months |
+| New Sales Data               | Var5   | Numeric       | USD       | Average cost per new complete figure in last six months          |
+| Leg Sales                    | Var6   | Numeric       | USD       | Average cost per lot of used leg piece                           |
+| Torso Sales                  | Var7   | Numeric       | USD       | Average cost per lot of used torso piece                         |
+| Head Sales                   | Var8   | Numeric       | USD       | Average cost per lot of used head piece                          |
+| Hair/Hat Sales               | Var9   | Numeric       | USD       | Average cost per lot of used hair/hat piece                      |
 
-* # Mass Data
-  * Var10: Mass Complete: Grams: Numerical: Mass of complete minifigure in grams
-  * Var11: Mass Minifigure: Grams: Numerical: Mass of minifigure without addons in grams
+* # Mass Variables
+| Name               | Number | Variable Type | Data Type | Notes                                    |
+|--------------------|--------|---------------|-----------|------------------------------------------|
+| Mass (complete)    | Var10  | Numeric       | Grams (g) | Mass of complete minifigure              |
+| Mass (figure-only) | Var11  | Numeric       | Grams (g) | Mass of figure without additional pieces |
 
-* # Categorical Booleans
-  * Var12: Gendered: Boolean: Categorical: If the figure is obviously feminine
-  * Var13: Human: Boolean: Categorical: If the figure is obviously human
-  * Var14: HeadOnly: Boolean: Categorical: If the figure has a single molded head piece and not a head and hat or hair
-  * Var15: Bodysuit: Boolean: Categorical: If the figure is some sort of suited character (e.g. hot dog suit, chicken man)
-  * Var16: LivingAddOn: Boolean: Categorical: If the figure comes with another entity which is implied to be alive
-  * Var17: Handsfull: Boolean: Categorical: If the figure contains enough accessories to fill it's hands
+* # Categorical Variables
+| Name        | Number | Variable Type | Data Type | Notes                                                                                                                 |
+|-------------|--------|---------------|-----------|-----------------------------------------------------------------------------------------------------------------------|
+| Gendered    | Var12  | Categorical   | Boolean   | does the figure obviously present as female?                                                                          |
+| Human       | Var13  | Categorical   | Boolean   | is the figure obviously meant to be human?                                                                            |
+| HeadOnly    | Var14  | Categorical   | Boolean   | did the figure's head piece come from one mold? (i.e. not multiple pieces?)                                           |
+| BodySuit    | Var15  | Categorical   | Boolean   | is the figure some sort of suited character? (e.g. hot dog suit, chicken man)                                         |
+| LivingAddOn | Var16  | Categorical   | Boolean   | does this minifigure set come with multiple entities which would come animate in a "Indian in the Cupboard" scenario? |
+| Handsfull   | Var17  | Categorical   | Boolean   | does this minifigure come with enough accessories to fill its hands?                                                  |
 
 * # Piece Data
-
-  * Var18: Number of Accessories: Int: Categorical: Number of parts contained in completed set but not in minifigure
-  * Var19: Number of Parts: Int: Categorical: Number of parts in minifigure
+| Name                  | Number | Variable Type | Data Type | Notes                                                                               |
+|-----------------------|--------|---------------|-----------|-------------------------------------------------------------------------------------|
+| Number of Accessories | Var18  | Categorical   | Int       | Number of parts contained within completed set, but not within minifigure's listing |
+| Number of Parts       | Var 19 | Categorical   | Int       | Number of parts contained in minifigure set                                         |
