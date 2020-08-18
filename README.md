@@ -16,37 +16,38 @@ LEGO minifigs and their accessories are known to appreciate in value [Todo: find
 |------------|------|-----------|-------|--------|
 | Name | Var1 | Label | Alpha | Official minifig set title |
 | Series | Var2 | Categorical | Integer | Blind-bag series number |
+| Year | Var3 | Categorical | Int (Temporal) | Year of series release |
 
 * # Price Variables
 | Name                         | Number | Variable Type | Data Type | Notes                                                            |
 |------------------------------|--------|---------------|-----------|------------------------------------------------------------------|
-| Used Sales Data              | Var3   | Numeric       | USD       | Average cost per used minifig set in last six months         |
-| Used Minifig-only Sales Data | Var4   | Numeric       | USD       | Average cost per used minifig (without additional pieces) in last six months |
-| New Sales Data               | Var5   | Numeric       | USD       | Average cost per new complete minifig set in last six months          |
-| Leg Sales                    | Var6   | Numeric       | USD       | Average cost per lot of used leg piece                           |
-| Torso Sales                  | Var7   | Numeric       | USD       | Average cost per lot of used torso piece                         |
-| Head Sales                   | Var8   | Numeric       | USD       | Average cost per lot of used head piece                          |
-| Hair/Hat Sales               | Var9   | Numeric       | USD       | Average cost per lot of used hair/hat piece                      |
+| Used Sales Data              | Var4   | Numeric       | USD       | Average cost per used minifig set in last six months         |
+| Used Minifig-only Sales Data | Var5   | Numeric       | USD       | Average cost per used minifig (without additional pieces) in last six months |
+| New Sales Data               | Var6   | Numeric       | USD       | Average cost per new complete minifig set in last six months          |
+| Leg Sales                    | Var7   | Numeric       | USD       | Average cost per lot of used leg piece                           |
+| Torso Sales                  | Var8   | Numeric       | USD       | Average cost per lot of used torso piece                         |
+| Head Sales                   | Var9   | Numeric       | USD       | Average cost per lot of used head piece                          |
+| Hair/Hat Sales               | Var10   | Numeric       | USD       | Average cost per lot of used hair/hat piece                      |
 
 * # Mass Variables
 | Name               | Number | Variable Type | Data Type | Notes                                    |
 |--------------------|--------|---------------|-----------|------------------------------------------|
-| Mass (complete)    | Var10  | Numeric       | Grams (g) | Mass of complete minifig set              |
-| Mass (figure-only) | Var11  | Numeric       | Grams (g) | Mass of minifig (without additional pieces) |
+| Mass (complete)    | Var11  | Numeric       | Grams (g) | Mass of complete minifig set              |
+| Mass (figure-only) | Var12  | Numeric       | Grams (g) | Mass of minifig (without additional pieces) |
 
 * # Categorical Variables
 | Name        | Number | Variable Type | Data Type | Notes                                                                                                                 |
 |-------------|--------|---------------|-----------|-----------------------------------------------------------------------------------------------------------------------|
-| Gendered    | Var12  | Categorical   | Boolean   | does the minifig obviously present as female?                                                                          |
-| Human       | Var13  | Categorical   | Boolean   | is the minifig obviously meant to be human?                                                                            |
-| HeadOnly    | Var14  | Categorical   | Boolean   | did the minifig's head piece come from one mold? (i.e. not multiple pieces?)                                           |
-| BodySuit    | Var15  | Categorical   | Boolean   | is the minifig some sort of suited character? (e.g. hot dog suit, chicken man)                                         |
-| LivingAddOn | Var16  | Categorical   | Boolean   | does this minifig set come with multiple entities which would animate during a "Indian in the Cupboard" scenario? |
-| Handsfull   | Var17  | Categorical   | Boolean   | does this minifig come with enough accessories to fill its hands?                                                  |
+| Gendered    | Var13  | Categorical   | Boolean   | does the minifig obviously present as female?                                                                          |
+| Human       | Var14  | Categorical   | Boolean   | is the minifig obviously meant to be human?                                                                            |
+| HeadOnly    | Var15  | Categorical   | Boolean   | did the minifig's head piece come from one mold? (i.e. not multiple pieces?)                                           |
+| BodySuit    | Var16  | Categorical   | Boolean   | is the minifig some sort of suited character? (e.g. hot dog suit, chicken man)                                         |
+| LivingAddOn | Var17  | Categorical   | Boolean   | does this minifig set come with multiple entities which would animate during a "Indian in the Cupboard" scenario? |
+| Handsfull   | Var18  | Categorical   | Boolean   | does this minifig come with enough accessories to fill its hands?                                                  |
 
 * # Piece Data
 | Name                  | Number | Variable Type | Data Type | Notes                                                                               |
 |-----------------------|--------|---------------|-----------|-------------------------------------------------------------------------------------|
-| Number of Accessories | Var18  | Categorical   | Int       | Number of parts contained within completed minifig set, but not within the minifig's listing |
-| Number of Parts       | Var19 | Categorical   | Int       | Number of parts contained in the minifig set                                         |
+| Number of Accessories | Var19  | Categorical   | Int       | Number of parts contained within completed minifig set, but not within the minifig's listing |
+| Number of Parts       | Var20 | Categorical   | Int       | Number of parts contained in the minifig set                                         |
 
